@@ -1,8 +1,8 @@
 #ifndef PERSONAGEM_H
 #define PERSONAGEM_H
 
-bool podeMover(int novoX, int novoY, int mapa[20][20]){
-    if(novoX >= 0 && novoX < 20 && novoY >= 0 && novoY < 20){
+bool podeMover(int novoX, int novoY, int mapa[10][20]){
+    if(novoX >= 0 && novoX < 10 && novoY >= 0 && novoY < 20){
         if(mapa[novoX][novoY] == 0){
             return true;
         }
@@ -13,7 +13,7 @@ bool podeMover(int novoX, int novoY, int mapa[20][20]){
     return false;
 }
 
-void moverPersonagem(int &x, int &y, int direcao, int mapa[20][20]){
+void moverPersonagem(int &x, int &y, int direcao, int mapa[10][20]){
     int novoX = x;
     int novoY = y;
 
